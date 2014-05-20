@@ -1,4 +1,4 @@
 POP-Effects
 ===========
 
-Layer Category to simply add display effects like fade in, fade out, zoom in and so on....
+Based on [Pop](https://github.com/facebook/pop) this layer category helps to add display effects like fade in, fade out, zoom in and more your UI elements.
