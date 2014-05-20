@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5D142F6D-EF22-4BC6-B807-29A8876C2BAF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>POP+Effects-Sample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>145E2073-286E-45A2-9933-79468E4C17DF</key>
+		<string>https://github.com/quemb/POP-Effects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>POP+Effects-Sample/POP+Effects-Sample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>145E2073-286E-45A2-9933-79468E4C17DF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/quemb/POP-Effects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>145E2073-286E-45A2-9933-79468E4C17DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>145E2073-286E-45A2-9933-79468E4C17DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>POP-Effects</string>
+		</dict>
+	</array>
+</dict>
+</plist>
