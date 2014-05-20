@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CALayer+POPEffects.h"
+
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *fadeOutLabel;
+@property (weak, nonatomic) IBOutlet UILabel *zoomOutLabel;
 
 @end

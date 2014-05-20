@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [_fadeOutLabel.layer fadeOut];
+    [_zoomOutLabel.layer zoomOut];
 }
 
 - (void)didReceiveMemoryWarning

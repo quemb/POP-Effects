@@ -7,8 +7,13 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+@class POPBasicAnimation;
 
 @interface CALayer (POPEffects)
 
+
+- (POPBasicAnimation *) fadeOut;
+
+- (POPBasicAnimation *) zoomOut;
 
 @end
