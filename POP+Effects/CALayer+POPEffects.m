@@ -11,6 +11,8 @@
 
 #import <POP/POP.h>
 
+float const kPOPEffectZoomOutToValue = 3.0f;
+
 @implementation CALayer (POPEffects)
 
 
@@ -18,7 +20,6 @@
     
     POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    anim.fromValue = @(1.0);
     anim.toValue = @(0.0);
     [self pop_addAnimation:anim forKey:@"fadeOut"];
     return anim;
@@ -27,11 +28,11 @@
 
 - (POPBasicAnimation *)zoomOut {
     
-    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerZPosition];
+    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    anim.fromValue = @(self.zPosition);
-    anim.toValue = @(-500);
+    anim.toValue = [NSValue valueWithCGSize:CGSizeMake(kPOPEffectZoomOutToValue, kPOPEffectZoomOutToValue)];
     [self pop_addAnimation:anim forKey:@"zoomOut"];
+    [self fadeOut];
     return anim;
 }
 
