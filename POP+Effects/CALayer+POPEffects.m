@@ -15,6 +15,14 @@ float const kPOPEffectZoomOutToValue = 3.0f;
 
 @implementation CALayer (POPEffects)
 
+- (POPBasicAnimation *)fadeIn {
+    
+    POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerOpacity];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anim.toValue = @(100.0);
+    [self pop_addAnimation:anim forKey:@"fadeIn"];
+    return anim;
+}
 
 - (POPBasicAnimation *)fadeOut {
     

@@ -12,6 +12,7 @@
 @interface CALayer (POPEffects)
 
 
+- (POPBasicAnimation *) fadeIn;
 - (POPBasicAnimation *) fadeOut;
 
 - (POPBasicAnimation *) zoomOut;
