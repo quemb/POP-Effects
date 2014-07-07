@@ -31,6 +31,7 @@ float const kPOPEffectZoomOutToValue = 3.0f;
     anim.toValue = @(0.0);
     [self pop_addAnimation:anim forKey:@"fadeOut"];
     return anim;
+    
 }
 
 
@@ -42,6 +43,7 @@ float const kPOPEffectZoomOutToValue = 3.0f;
     [self pop_addAnimation:anim forKey:@"zoomOut"];
     [self fadeOut];
     return anim;
+    
 }
 
 @end
