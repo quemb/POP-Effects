@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'POP+Effects'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/quemb/POP-Effects'
   s.authors      =  {'Toni Moeckel' => 'tonimoeckel@gmail.com'}
