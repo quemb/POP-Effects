@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	
-    [_fadeOutLabel.layer fadeOut];
+    [_fadeOutLabel fadeOut];
     [_zoomOutLabel.layer zoomOut];
 }
 

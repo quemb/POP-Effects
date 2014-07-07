@@ -10,9 +10,6 @@
 
 #import <POP/POP.h>
 
-float const kPOPEffectZoomOutToValue = 3.0f;
-
-
 @implementation UIView (POPEffects)
 
 
