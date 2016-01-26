@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66B0B5DA70FF49239C53C0A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E826300C894A4EB79BA839B1 /* libPods.a */; };
+		8906F67E1C57ADB800283636 /* PopAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906F67D1C57ADB800283636 /* PopAnimationDelegate.m */; };
 		89536F50196AF80700CEF9CA /* UIView+POPEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 89536F4F196AF80700CEF9CA /* UIView+POPEffects.m */; };
 		E236164F192C07EC00FA6DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E236164E192C07EC00FA6DA3 /* Foundation.framework */; };
 		E2361651192C07EC00FA6DA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2361650192C07EC00FA6DA3 /* CoreGraphics.framework */; };
@@ -38,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AFDCEC3C4A4B2DCFBA0D6C0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		21ADB4EF322459B4CBE99C21 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8906F67C1C57ADB800283636 /* PopAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopAnimationDelegate.h; path = "../POP+Effects/PopAnimationDelegate.h"; sourceTree = "<group>"; };
+		8906F67D1C57ADB800283636 /* PopAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopAnimationDelegate.m; path = "../POP+Effects/PopAnimationDelegate.m"; sourceTree = "<group>"; };
 		89536F4E196AF80700CEF9CA /* UIView+POPEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+POPEffects.h"; path = "../POP+Effects/UIView+POPEffects.h"; sourceTree = "<group>"; };
 		89536F4F196AF80700CEF9CA /* UIView+POPEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+POPEffects.m"; path = "../POP+Effects/UIView+POPEffects.m"; sourceTree = "<group>"; };
-		CBE86DA4B080475480580CF1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E236164B192C07EC00FA6DA3 /* POP+Effects-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POP+Effects-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E236164E192C07EC00FA6DA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2361650192C07EC00FA6DA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269B187B0F4FD94B7D7C2FEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDCEC3C4A4B2DCFBA0D6C0 /* Pods.debug.xcconfig */,
+				21ADB4EF322459B4CBE99C21 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2361642192C07EC00FA6DA3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +112,7 @@
 				E2361676192C07EC00FA6DA3 /* POP+Effects-SampleTests */,
 				E236164D192C07EC00FA6DA3 /* Frameworks */,
 				E236164C192C07EC00FA6DA3 /* Products */,
-				CBE86DA4B080475480580CF1 /* Pods.xcconfig */,
+				269B187B0F4FD94B7D7C2FEF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +188,8 @@
 				E2361688192C08B100FA6DA3 /* CALayer+POPEffects.m */,
 				89536F4E196AF80700CEF9CA /* UIView+POPEffects.h */,
 				89536F4F196AF80700CEF9CA /* UIView+POPEffects.m */,
+				8906F67C1C57ADB800283636 /* PopAnimationDelegate.h */,
+				8906F67D1C57ADB800283636 /* PopAnimationDelegate.m */,
 			);
 			name = "POP+Effects";
 			sourceTree = "<group>";
@@ -191,6 +206,7 @@
 				E2361648192C07EC00FA6DA3 /* Frameworks */,
 				E2361649192C07EC00FA6DA3 /* Resources */,
 				7F68AF5ADAD0441C9103691B /* Copy Pods Resources */,
+				D80FB6BC327531ABAF3916AF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,7 +318,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80FB6BC327531ABAF3916AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -315,6 +346,7 @@
 				E2361668192C07EC00FA6DA3 /* ViewController.m in Sources */,
 				E236165F192C07EC00FA6DA3 /* AppDelegate.m in Sources */,
 				E2361689192C08B100FA6DA3 /* CALayer+POPEffects.m in Sources */,
+				8906F67E1C57ADB800283636 /* PopAnimationDelegate.m in Sources */,
 				89536F50196AF80700CEF9CA /* UIView+POPEffects.m in Sources */,
 				E236165B192C07EC00FA6DA3 /* main.m in Sources */,
 			);
@@ -448,7 +480,7 @@
 		};
 		E2361681192C07EC00FA6DA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBE86DA4B080475480580CF1 /* Pods.xcconfig */;
+			baseConfigurationReference = 0AFDCEC3C4A4B2DCFBA0D6C0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -462,7 +494,7 @@
 		};
 		E2361682192C07EC00FA6DA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBE86DA4B080475480580CF1 /* Pods.xcconfig */;
+			baseConfigurationReference = 21ADB4EF322459B4CBE99C21 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

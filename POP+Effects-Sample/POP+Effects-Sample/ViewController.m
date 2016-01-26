@@ -20,6 +20,7 @@
 	
     [_fadeOutLabel fadeOut];
     [_zoomOutLabel.layer zoomOut];
+    [_bounceLabel bounce];
 }
 
 - (void)didReceiveMemoryWarning

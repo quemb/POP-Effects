@@ -14,5 +14,6 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *fadeOutLabel;
 @property (weak, nonatomic) IBOutlet UILabel *zoomOutLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bounceLabel;
 
 @end
